@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="row ms-5 me-5 mt-5 gx-5">
+    <div class="col-6">
+        <h3 class="border-bottom py-2 intro_title"> Caregiver</h3>
+        <div class="row ms-2 me-2 mt-2 gx-3">
+            <div class="col-5 mt-3">
+                <img class="rounded mx-auto d-block " width="100%" height="110%" src="{% static 'images/caregiver.png' %}"/>
+            </div>
+            <div class="col-7 mt-2">
+                <div class="card-text intro_content" style="white-space: pre-line;">
+                    <i class="fa fa-circle-user"></i> : 양윤성
+                    <i class="fa fa-school"></i> : 단국대학교 죽전캠퍼스
+                    <i class="fa fa-pen"></i> : 모바일시스템공학과
+                    <i class="fa fa-regular fa-envelope"></i> : abee3417@naver.com
+                    <i class="fa fa-instagram"></i> : @yy__seong
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <h3 class="border-bottom py-2 intro_title"> About Ruti</h3>
+        <div class="row ms-2 me-2 mt-3 gx-4">
+            <div class="col-5 mt-3">
+                <img class="rounded mx-auto d-block " width="100%" height="100%" src="{% static 'images/ruti_intro.jpg' %}"/>
+            </div>
+            <div class="col-7 mt-2">
+                <div class="card-text intro_content" style="white-space: pre-line;">
+                    <i class="fa fa-paw"></i> : 쿄숏 턱시도
+                    <i class="fa fa-venus-mars"></i> : 수컷
+                    <i class="fa fa-cake-candles"></i> : 18.07.07
+                    <i class="fa fa-house"></i> : 18.10.13
+                    <i class="fa fa-instagram"></i> : @lutyvely
+                </div>
+                <a href="{% url 'mypet:daily' %}"><button type="button" class="btn btn-lg btn-primary mt-5 mx-1 intro-btn">Check my life!</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

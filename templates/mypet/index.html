@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container my-4 mt-5">
+    <img class="rounded mx-auto d-block" width="30%" height="30%" src="{% static 'images/ruti_main.jpg' %}"/>
+</div>
+<div class="container my-3">
+    <p id="title" class="text-center">My Pet Ruti!</p>
+</div>
+<div class="container my-3">
+    <p class="text-center content">Ruti is very cute cat in our house.<br>
+        We introduce Ruti and provide information&amp;phothos. <br>
+        Read more deatiled with navbar above or start button below.
+    </p>
+</div>
+<br>
+<div class="d-flex justify-content-center">
+    <a href="https://www.instagram.com/lutyvely/" target="_blank"><button type="button" class="btn btn-lg btn-secondary mx-5 index-btn"><i class="fa fa-instagram"></i>&nbsp;&nbsp;Instagram</button></a>
+    <a href="{% url 'mypet:intro' %}"><button type="button" class="btn btn-lg btn-dark mx-5 index-btn">Get Started</button></a>
+</div>
+{% endblock %}

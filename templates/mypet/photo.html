@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="album py-4 mt-1 bg-light">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+            {% for photo in photo_list %}
+            <div class="col">
+                <div class="card shadow-sm fs-5 nav-link text-dark border border-3 border-drak">
+                    <img class="rounded" width="100%" height="100%" src="/media/{{photo.image}}">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="photo-content card-text fs-5">{{ photo.detail }}</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

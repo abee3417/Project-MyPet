@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Lato:wght@900&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+#title{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size : 60px;
+}
+
+#logo{
+    width: 50px;
+}
+
+.content{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
+.index-btn{
+    font-family: 'Kanit', sans-serif;
+    font-size : 30px; 
+    width: 180px;
+    height: 50px;
+    scale: 1.2;
+}
+
+.navs{
+    font-family: 'Kanit', sans-serif;
+    font-size: 23px;
+}
+
+.intro_title{
+    font-family: 'Kanit', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.intro_content{
+    font-family: 'Jua', sans-serif;
+    font-size: 25px;
+}
+
+.intro-btn{
+    font-family: 'Kanit', sans-serif;
+    font-size : 30px; 
+}
+
+.daily-title{
+    display: inline-block;
+}
+
+.photo-content{
+    font-family: 'Jua', sans-serif;
+}
